@@ -24,7 +24,7 @@ dependencies {
     compileOnly(intellijCoreDep()) { includeJars("intellij-core") }
     compileOnly(intellijDep()) {
         Ide.IJ191.orHigher {
-            this@compileOnly.includeJars("intellij-core")
+            this@compileOnly.includeJars("platform-api")
         }
     }
     compileOnly(intellijPluginDep("gradle"))
